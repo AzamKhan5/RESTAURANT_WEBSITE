@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+ 
+    <title>Document</title>
+
+<style>
+
+  body{
+background-color: peachpuff;
+
+  }
+
+  .logo-image img:hover{
+    box-shadow: 0px 0px 10px red;
+    animation: imgRotate 0.5s ease;
+  }
+  @media only screen and (max-width: 768px) {
+    .logo-image img {
+      width: 65px;
+    }
+    .logo-image .name{
+      font-size:medium ;
+      }
+  }
+  @media only screen and (max-width: 480px) {
+    .logo-image img {
+      width: 45px;
+    }
+    .logo-image .name{
+    font-size: small ;
+    }
+  }
+
+/*navvvvv startttt*/
+  .nav-item a:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 2px;
+  }
+  .nav-item a{
+   margin-inline: 10px;
+    font-size: larger;
+    color: white;
+  }
+  nav .btn {
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  .name:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+  }
+
+.extra p{
+  font-size: small;
+}
+.extra .call, .address{
+  position: fixed;
+  bottom: 4em;
+}
+.extra .call, .address p{
+  font-size: x-small;
+}
+
+/*navvvvv  endss*/
+
+/*headingggggggggg*/
+.heading{
+  background-image: linear-gradient(rgba(15, 23, 43, .5), rgba(15, 23, 43, .5)), url('img/head.png');
+  background-position:center ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 10em 0 3em 0;
+}
+   .heading h1{
+    margin-top: 1em;
+    color: white;
+    padding: 1em 1em;
+    line-height: normal;
+   }
+   .heading span{
+    color: orangered;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    font-weight: bolder;
+   }
+   .heading p{
+    color: whitesmoke;
+    font-size: large;
+    padding: 0 1em 1em 2em;
+   }
+
+.heading img{
+  text-align: center;
+  animation: imgRotate 15s linear infinite;
+  max-width: 100%;
+}
+@keyframes imgRotate{ 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+}
+
+  /*headingggggggggg endssssssss*/
+
+/*carousel   start*/
+  .carouselmain{
+    background: black;
+    text-align: center;
+    }
+    .carouselmain img{
+  filter: blur(0.1em);
+    }
+    
+    .carouselmain .carousel-caption button{
+         padding: 5px 2em ;
+         font-size: larger;  
+         margin: 0 0 3em 0 ;
+    }
+    .carousel-caption h1{
+    text-shadow: 2px 5px 3px black;
+    }
+    .carousel-caption p{
+     font-size: x-large;
+     text-shadow: 2px 2px 3px black;
+    }
+  
+/*carousel endsss*/
+
+  /*special starts*/
+
+.specialhead h1{
+  color: rgb(0, 0, 0);
+  padding: 0 0 10px 0 ;
+  font-size: 40px;
+  font-family: cursive;
+}
+.specialbody h5{
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.chef, .recipe, .ingredients, .service{
+  background-color: burlywood;  
+}
+  /*special endss*/
+  
+/*galllleerryyy*/
+  .gallery img{
+    border: 2px groove white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 7px grey;
+  }
+  /*gallerryyyyyy enddsss*/
+
+/*formmmmmmmmmmmm*/
+
+#cu{
+  text-align: center;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+ width: auto;
+  margin:1em 0 0;
+}
+.form1{
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form{
+  background-color: rgba(228, 157, 29, 0.2);
+  padding: 2em;
+  color: black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 4em;
+  text-align: left;
+}
+#name, #email, #phone{
+  outline: none;
+  color: rgba(0, 0, 0, 100%);
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.4);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 2px groove;
+  border-radius: 100px;
+}
+.form1 form #add{
+  outline: none;
+  color: rgba(0, 0, 0, 100%);
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.4);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 2px groove;
+  border-radius: 30px;
+}
+label {
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*formmmmmmmmmmmm endddsss*/
+
+/*address...........*/
+.adrs{
+  border: 1px dotted black;
+ text-align: center;
+ border-radius: 10em 2em ;
+}
+
+/*address...........*/
+
+/* footer start*/
+footer{
+  background-color: black;
+padding: 5px 0;
+color: white;
+}
+footer h3{
+color: orange;
+font-family: cursive;
+}
+footer li, li a, a{
+  list-style:circle;
+  color: white;
+  text-decoration: none;
+}
+footer li a:hover{
+  color: orange;
+  text-decoration: none;
+}
+.copyright{
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  max-width:auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navv{
+  height: 100px;
+}
+
+  </style>
+
+</head>
+<body>
+    
+
+  <header class=" bg-dark navv fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top container">
+      <div class="container-fluid">
+  <div class="logo-image">
+        <a class="navbar-brand" href="index.html"><img src="TFF.gif" alt="" width="80" class="rounded-circle">
+          <span class="name">The Fire Fusiion</span></a>
+  </div>
+        <button class=" d-md-block d-lg-none navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <a class="navbar-brand" href="index.html">The Fire Fusiion</a></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Food Menu
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="product.html">Veg Food</a></li>
+                  <li><a class="dropdown-item" href="Non-veg.html">Non-veg Food</a></li>
+                  <li><a class="dropdown-item" href="Snack.html">Snacks and more</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-warning" type="submit">Search</button>
+            </form> 
+
+            <div class="extra d-lg-none mt-3 text-start container mt-5 extra">
+
+              <div class="row mt-2 hour">
+                <div class="col">
+                  <h5>Opening Time</h5>
+                    <p>Monday-Saturday<br>  09AM-11PM </p>  
+                    <p>Sunday<br> 10AM-02PM</p> 
+                </div>
+                </div>
+            
+              <div class="row mt-2 address">
+                <div class="col col-1 mt-1">
+              <img src="icons/map-icon.png" alt="adds" class="" width="15px">
+            </div>
+              <p class="col col-10 mt-2">
+              69, Street near C21 mall,<br>
+              Ujjain, (M.P.), INDIA
+            </p>
+            </div>
+            <div class="row mt-1 call">
+              <div class="col col-1 ">
+              <img src="icons/call-icon.png" alt="call" width="18px">
+            </div>
+              <p class="col col-9 mt-1 ">0123456789</p>
+            </div>
+            
+             </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+    <div class="container heading ">
+      <div class="row gy-5">
+    <div class="col-lg-6 text-center text-lg-start">
+    <h1>
+      Enjoy Our <span>Best Quality</span> and <span>Delicious</span> Meal.
+    </h1>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur repudiandae suscipit debitis porro facilis sit a minus nulla neque?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic sequi expedita est incidunt doloribus. Magni, dolore, tempora maiores omnis reprehenderit dignissimos deserunt, quasi officia ipsa amet iure quas ea.
+    </p>
+  </div>
+
+<div class="plate col-lg-6 text-center text-lg-end overflow-hidden ">
+  <img src="img/plate.png" alt="">
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  <main>
+
+    <div class="container carouselmain">
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+        <a href="product.html" ><img src="veg/360_F_614088972_6pzy2JnndfUKqGnFK7NLlchAuC5uyeRP.webp" class="d-block w-100" alt="..."> </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-1 fw-bold pb-2">Veg Item</h1>
+          <p>Taste various of dishes under one roof or at your place.</p>
+          <a href="product.html"><button class="btn btn-success" id="cb"> Order Online</button></a>
+        </div>
+      </div>
+  
+
+        <div class="carousel-item">
+          <a href="Non-veg.html" ><img src="nonveg/non1.jpg" class="d-block w-100" alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+           <h1 class="display-1 fw-bold pb-2 ">Non-veg item</h1>
+           <p>Enjoy our mouthwatering non veg items.</p>
+         <a href="Non-veg.html"> <button class="btn btn-danger " id="cb"> Order Online</button></a>
+          </div>
+        </div>
+    
+
+        <div class="carousel-item">
+          <a href="Snack.html" > <img src="img/snacksbg.png" class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-1 fw-bold pb-2">Explore more</h1>
+          <p>Enjoy ready to serve tasty snacks and beverages.</p>
+         <a href="Snack.html"> <button class="btn btn-warning" id="cb"> Order Online</button></a>
+        </div>
+      </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+<hr>
+
+<div class="container special text-center mt-3 mb-3">
+  <div class="py-2 specialhead ">
+<h1> Our Speciality</h1>
+</div>
+<div class="row g-4 specialbody pt-1 pb-1">
+  <div class="col-lg-3 col-sm-6" >
+    <div class="chef rounded pt-3">
+        <div class="p-4">
+    <img src="img/chef.png" alt="" width="75px">
+            <h5>Master Chefs</h5>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-sm-6" >
+    <div class="recipe rounded pt-3">
+        <div class="p-4">
+    <img src="img/recipe.png" alt="" width="75px">
+            <h5>Original Recipe</h5>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-sm-6" >
+    <div class="ingredients rounded pt-3">
+        <div class="p-4">
+    <img src="img/spices.png" alt="" width="110px">
+            <h5>Best Ingredients</h5>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-sm-6" >
+    <div class="service rounded pt-2">
+        <div class="p-3">
+    <img src="img/service.png" alt="" width="75px">
+            <h5>Customer Service
+              <br><strong>0123456789</strong>
+            </h5>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="gallery container mt-3 p-2">
+  <h1 class="text-center mt-1 mb-3 p-1 ">GALLERY...</h1>
+<div class="row g-3 justify-content-center ">
+<div class="col col-lg-5" >
+<img src="img/gallery/pexels-andrea-piacquadio-761854.jpg" alt="" width="100%" class="">  
+ </div>
+<div class="col col-lg-5">
+  <img src="img/gallery/pexels-elle-hughes-2696064.jpg" alt="" width="100%">
+   </div>
+</div>
+   <div class="row g-3 justify-content-center mt-2 ">
+<div class="col col-lg-5  col-7">
+  <img src="img/gallery/pexels-life-of-pix-67468.jpg" alt="" width="100%"> 
+</div>
+   </div>
+   <div class="row g-3 mt-2  justify-content-center ">
+     <div class="col col-lg-5">
+       <img src="img/gallery/pexels-pixabay-262978.jpg" alt="" width="100%"> 
+     </div>
+     <div class="col col-lg-5">
+       <img src="img/gallery/pexels-viktoria-alipatova-2074130.jpg" alt="" width="100%"> 
+     </div>
+   </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <h1 class="display-4 fw-normal" id="cu">Contact Us</h1>
+      <div class="form1">
+        <form action="#" id="form" class="form">
+            <div class="mb-3 mt-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone No.:</label>
+                <input type="text" class="form-control" id="phone" placeholder="Enter phone no" name="phone">
+            </div>
+            <label for="add" class="form-label">Address:</label>
+            <textarea name="add" id="add" class="form-control" placeholder="Enter Address" cols="30" rows="3"></textarea>
+            <br>
+            <button type="submit" class="btn btn-success" id="sub">Submit</button>
+        </form>
+    </div>
+</div>
+
+<hr>
+
+<div class="mapping container">
+  <h1 class="display-4 text-center fw-normal"> LOCATION</h1>
+<div class="row g-2 m-3 justify-content-center">
+  <div class="col map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2181.2251785789554!2d75.7892841015564!3d23.156733628568738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707222624060!5m2!1sen!2sin" width="550" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="col adrs m-5 p-2">
+  <h1 class="">Address & Hours</h1>
+   <p>The Fire Fusiion Restaurant, <br>
+  69 street near C21 Mall, <br>
+   Ujjain, (M.P.) </p>
+
+   <h3 class="mt-3">Opening</h3>
+   <p > <strong>Monday-Saturday</strong> <br>  09AM-11PM </p>  
+   <p><strong>Sunday</strong> <br> 10AM-02PM</p> 
+</div>
+
+</div>
+</div>
+
+
+  </main>
+
+   
+    <!--footer-->
+  <footer class="bg-black">
+    <div class="container">
+        
+        <div class="row p-1 my-1">
+          <div class="col-sm-4">
+            <h3>Useful link </h3>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+               
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <h3>Food Items </h3>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="product.html">Veg Food</a></li>
+                <li><a href="Non-veg.html">Non-veg Food</a></li>
+                <li><a href="Snack.html">Snacks and more</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4 ">
+            <h3>Social Media</h3>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="row p-1">
+            <div class="col-12 p-1 my-2 col-lg-4">
+              <img src="icons/map-icon.png"> &nbsp; The Fire Fusiion Restaurant, <br>
+                 69 street near C21 Mall, <br>
+                  Ujjain, (M.P.)
+            </div> 
+            <div class="col-12 p-1 my-2 col-lg-4">
+              <img src="icons/call-icon.png"> &nbsp; Call : +917000380337
+            </div>
+            <div class="col-12 p-1 my-2 col-lg-4">
+              <img src="icons/mail-icon.png"> &nbsp;<a href="#">thefirefusiionrestaurant@gmail.com</a>
+            </div>
+          </div>
+           <!-- <div class="col-sm-4">
+            <h3>Opening</h3>
+              <p> <strong>Monday-Saturday</strong> <br>  09AM-11PM </p>  
+              <p><strong>Sunday</strong> <br> 10AM-02PM</p> 
+         </div> -->
+        </div>
+        <!--copyright-->
+  <div class="copyright">
+        <p>©2023 <a href="index.html">The Fire Fusiion</a> Restaurant Food Services Pvt. Lmt. <br> 
+          All Rights Are Reserved <br>
+          Designed by~ The Fire Fusiion </p>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

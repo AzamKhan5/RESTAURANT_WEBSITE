@@ -1,0 +1,154 @@
+
+.logo-image img:hover{
+  box-shadow: 0px 0px 10px red;
+  animation: imgRotate 0.5s ease;
+}
+@media only screen and (max-width: 768px) {
+  .logo-image img {
+    width: 65px;
+  }
+  .logo-image .name{
+    font-size:medium ;
+    }
+}
+@media only screen and (max-width: 480px) {
+  .logo-image img {
+    width: 45px;
+  }
+  .logo-image .name{
+  font-size: small ;
+  }
+}
+
+/*navvvvv startttt*/
+.nav-item a:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-decoration-thickness: 2px;
+}
+.navv{
+  height: 107px;
+}
+.nav-item a{
+ margin-inline: 10px;
+  font-size: larger;
+  color: white;
+}
+nav .btn {
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.name:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+
+.extra p{
+font-size: small;
+}
+.extra .call, .address{
+position: fixed;
+bottom: 4em;
+}
+.extra .call, .address p{
+font-size: x-small;
+}
+/*nav endsss*/
+
+
+/*formmmmmmmmmmmmmmmmmmm*/
+.form2{
+  background-image: url('img/formbg.jpg'); /* Replace with your image URL/path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 3em ;
+  
+}
+#cu{
+  text-align: center;
+  padding-top: 120px;
+  color: rgb(255, 123, 0);
+  text-shadow: 1px 1px 5px black;
+  font-family: 'Times New Roman', Times, serif, cursive;
+ height: 62px;
+ width: auto;
+  margin-bottom: 2em;
+}
+.form1{
+  margin-top: 10px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.form{
+  background-color: rgba(228, 157, 29, 0.2);/* Add a semi-transparent white background to make the form readable */
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 5em;
+}
+#name, #email, #phone{
+  outline: none;
+  color: rgba(0, 0, 0, 100%);
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.4);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 2px groove;
+  border-radius: 100px;
+}
+form #add{
+  outline: none;
+  color: rgba(0, 0, 0, 100%);
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.4);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: 2px groove;
+  border-radius: 30px;
+}
+label {
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* formmmmmmmm */
+
+
+/* footer start*/
+footer{
+  padding: 12px 0;
+  color: white;
+  }
+  footer h3{
+  color: orange;
+  font-family: cursive;
+  }
+  footer li, li a, a{
+    list-style:circle;
+    color: white;
+    text-decoration: none;
+  }
+  footer li a:hover{
+    color: orange;
+    text-decoration: none;
+  }
+  .copyright{
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    max-width:auto;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  
+/* enddssssss */
+
+
+
+

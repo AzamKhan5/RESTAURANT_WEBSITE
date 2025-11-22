@@ -1,0 +1,150 @@
+body{
+    width: auto;
+    font-family: 'roboto',sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: orange;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color:orange;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+
+}
+nav ul a {
+    text-decoration: none;
+    color: white;
+    margin-inline: 30px;
+    margin-top: auto;
+
+}
+nav ul a:hover{
+    color: orange;
+}
+nav button{
+    width: 80px;
+    height: 28px;
+    color: black;
+    background-color: orange ;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid grey;
+
+}
+
+#home{
+    color: orange;
+}
+#home:hover{
+    text-decoration: underline;
+ 
+}
+
+.logo{
+    margin-left: 30px;
+
+}
+.logo h1{
+    font-size: 30px;
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    
+    color: orange;
+}
+.main img{
+    width: fit-content;
+    position: relative;
+    
+}
+.main-text{
+    width: 500px;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+
+}
+.main-text button{
+    width: 80px;
+
+}
+.main-text button{
+    width: 120px;
+    height: 28px;
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+}
+.main-text button:hover{
+    width: 140px;
+    height: 40px ;
+    transition: .7s;
+    cursor: pointer;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.card .inner-card{
+    width: 300px;
+    background-color:white ;
+    margin-inline: 10px;
+    border-radius: 20px;
+    
+}
+.inner-card img{
+    width: 100%;
+    
+
+}
+.inner-card .food-text{
+    padding: 10px;
+    
+}
+.food-text button{
+    width: 80px;
+    height: 28px;
+    color: white;
+    background-color: orange ;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+
+} 
+.food-text button:hover{
+    width: 100px;
+    height: 30px;
+    transition: .7s;
+    cursor: pointer;
+}

@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <title>Document</title>
+
+    <style>
+    body{
+        background-color: peachpuff ;
+    }
+
+
+
+    .logo-image img:hover{
+        box-shadow: 0px 0px 10px red;
+        animation: imgRotate 0.5s ease;
+      }
+      @media only screen and (max-width: 768px) {
+        .logo-image img {
+          width: 65px;
+        }
+        .logo-image .name{
+          font-size:medium ;
+          }
+      }
+      @media only screen and (max-width: 480px) {
+        .logo-image img {
+          width: 45px;
+        }
+        .logo-image .name{
+        font-size: small ;
+        }
+      }
+    
+    /*navvvvv startttt*/
+      .nav-item a:hover {
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: green;
+        text-decoration-thickness: 2px;
+      }
+      .dropdown-menu a:hover{
+        background-color: gray;
+      }
+      .nav-item a{
+       margin-inline: 10px;
+        font-size: larger;
+        color: white;
+      }
+      nav .btn {
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      .name:hover{
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-decoration-thickness: 2px;
+      }
+    
+    .extra p{
+      font-size: small;
+    }
+    .extra .call, .address{
+      position: fixed;
+      bottom: 4em;
+    }
+    .extra .call, .address p{
+      font-size: x-small;
+    }
+/*nav endsss*/
+
+main{
+    padding: 8em 0 0 0;;
+}
+.owl-carousel button{
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    box-shadow: 0px 0px 10px black;
+}
+  .food-item {
+    display: none;
+  }
+  .food-item.active {
+    display: block;
+  }
+
+
+
+
+/* footer start*/
+footer{
+  padding: 5px 0;
+  color: white;
+  }
+  footer h3{
+  color: orange;
+  font-family: cursive;
+  }
+  footer li, li a, a{
+    list-style:circle;
+    color: white;
+    text-decoration: none;
+  }
+  footer li a:hover{
+    color: orange;
+    text-decoration: none;
+  }
+  .copyright{
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    max-width:auto;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .navv{
+    height: 107px;
+  }
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- nav start -->
+   
+    <header class=" bg-dark navv fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top container">
+      <div class="container-fluid">
+  <div class="logo-image">
+        <a class="navbar-brand" href="index.html"><img src="TFF.gif" alt="" width="80" class="rounded-circle">
+          <span class="name">The Fire Fusiion</span></a>
+  </div>
+        <button class=" d-md-block d-lg-none navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <a class="navbar-brand" href="index.html">The Fire Fusiion</a></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Food Menu
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                  <li><a class="dropdown-item" href="product.html">Veg Food</a></li>
+                  <li><a class="dropdown-item" href="Non-veg.html">Non-veg Food</a></li>
+                  <li><a class="dropdown-item" href="Snack.html">Snacks and more</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-warning" type="submit">Search</button>
+            </form> 
+  
+            <div class="extra d-lg-none mt-3 text-start container mt-5 extra">
+  
+              <div class="row mt-2 hour">
+                <div class="col">
+                  <h5>Opening Time</h5>
+                    <p>Monday-Saturday<br>  09AM-11PM </p>  
+                    <p>Sunday<br> 10AM-02PM</p> 
+                </div>
+                </div>
+            
+              <div class="row mt-2 address">
+                <div class="col col-1 mt-1">
+              <img src="icons/map-icon.png" alt="adds" class="" width="15px">
+            </div>
+              <p class="col col-10 mt-2">
+              69, Street near C21 mall,<br>
+              Ujjain, (M.P.), INDIA
+            </p>
+            </div>
+            <div class="row mt-1 call">
+              <div class="col col-1 ">
+              <img src="icons/call-icon.png" alt="call" width="18px">
+            </div>
+              <p class="col col-9 mt-1 ">0123456789</p>
+            </div>
+            
+             </div>
+  
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+      
+    
+
+<main class="container">
+<div class="display-5 text-center fw-bold">Snacks</div>
+    <hr>
+<!-- Owl Carousel -->
+<div class="owl-carousel owl-theme container">
+    <div class="item"><button class="btn btn-primary food-btn" data-target="pizza">Pizza</button></div>
+    <div class="item"><button class="btn btn-primary food-btn" data-target="burger">Burger & Rolls</button></div>
+    <div class="item"><button class="btn btn-primary food-btn" data-target="sandwich">Sandwich</button></div>
+    <div class="item"><button class="btn btn-primary food-btn" data-target="noodles">Noodles & Manchurian</button></div>
+    <div class="item"><button class="btn btn-primary food-btn" data-target="fries">Fries & Pasta</button></div>
+    <div class="item"><button class="btn btn-primary food-btn" data-target="coffee">Coffee</button></div>
+  </div>
+<hr>
+
+   </main>
+
+
+   <div class="food-item pizza container active">
+    <h1 class="text-center display-5 fw-normal pb-4">Pizza</h1>
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/tomatopi.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Soft potato cooked in palak with a flavorful masala.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/cappnr.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Delicious paneer curry with mouthwatering flavors.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+       
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/cheesepizza.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Delicious green peas and soft paneer in a flavorful tomato-based gravy.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/cappnrpi.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Creamy paneer masala simmered in aromatic spices and rich tomato gravy.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/chilipnr pi.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">All time favorite aaloo gobhi made with fresh veggies.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/mushroom.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title"> Pizza</h5>
+                    <p class="card-text">Potato tossed with onions, tomatos and home blended spices.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/onionpi.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Soft potato cooked in palak with a flavorful masala.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/pnr and veggie.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Soft potato cooked in palak with a flavorful masala.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/spcveg pizza.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Soft potato cooked in palak with a flavorful masala.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/tndrpnr.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Soft potato cooked in palak with a flavorful masala.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/veg loaded.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Soft potato cooked in palak with a flavorful masala.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/pizza/vegchs pizza.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">Soft potato cooked in palak with a flavorful masala.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+   </div>
+
+
+<div class="container burger food-item">
+        <h1 class="text-center display-5 fw-normal pb-4">Burger & Rolls</h1>
+        <div class="container pizza">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/brgr & rolls/regular brgr.png" alt="Special Burger" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$9.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="card mb-3">
+                      <img src="snacks/brgr & rolls/aloo tikki brgr.jpeg" alt="Special Burger" class="card-img-top img-fluid">
+                      <div class="card-body">
+                          <h5 class="card-title">Burger</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                          <p class="card-text"><small class="text-muted">$9.99</small></p>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between">
+                          <button class="btn btn-primary">Add to Cart</button>
+                          <button class="btn btn-success">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4">
+                  <div class="card mb-3">
+                      <img src="snacks/brgr & rolls/2 patti brgr.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                      <div class="card-body">
+                          <h5 class="card-title">Burger</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                          <p class="card-text"><small class="text-muted">$12.99</small></p>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between">
+                          <button class="btn btn-primary">Add to Cart</button>
+                          <button class="btn btn-success">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/brgr & rolls/chstikka brgr.jpeg" alt="Grilled Salmon" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$15.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="card mb-3">
+                      <img src="snacks/brgr & rolls/veggie-burger.jpg" alt="Grilled Salmon" class="card-img-top img-fluid">
+                      <div class="card-body">
+                          <h5 class="card-title">Burger</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur..</p>
+                          <p class="card-text"><small class="text-muted">$15.99</small></p>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between">
+                          <button class="btn btn-primary">Add to Cart</button>
+                          <button class="btn btn-success">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-md-6 col-lg-4" >
+                  <div class="card mb-3">
+                      <img src="snacks/brgr & rolls/regpnr roll.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                      <div class="card-body">
+                          <h5 class="card-title">Burger</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                          <p class="card-text"><small class="text-muted">$12.99</small></p>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between">
+                          <button class="btn btn-primary">Add to Cart</button>
+                          <button class="btn btn-success">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+        
+              <div class="col-md-6 col-lg-4">
+                  <div class="card mb-3">
+                      <img src="snacks/brgr & rolls/corn.jpeg" alt="Special Burger" class="card-img-top img-fluid">
+                      <div class="card-body">
+                          <h5 class="card-title">Burger</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                          <p class="card-text"><small class="text-muted">$9.99</small></p>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between">
+                          <button class="btn btn-primary">Add to Cart</button>
+                          <button class="btn btn-success">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="card mb-3">
+                      <img src="snacks/brgr & rolls/pnr tikka roll.jpg" alt="Special Burger" class="card-img-top img-fluid">
+                      <div class="card-body">
+                          <h5 class="card-title">Burger</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                          <p class="card-text"><small class="text-muted">$9.99</small></p>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between">
+                          <button class="btn btn-primary">Add to Cart</button>
+                          <button class="btn btn-success">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="card mb-3">
+                      <img src="snacks/brgr & rolls/pnrroll.jpeg" alt="Special Burger" class="card-img-top img-fluid">
+                      <div class="card-body">
+                          <h5 class="card-title">Burger</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                          <p class="card-text"><small class="text-muted">$9.99</small></p>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between">
+                          <button class="btn btn-primary">Add to Cart</button>
+                          <button class="btn btn-success">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                  <div class="card mb-3">
+                      <img src="snacks/brgr & rolls/potato roll.jpg" alt="Special Burger" class="card-img-top img-fluid">
+                      <div class="card-body">
+                          <h5 class="card-title">Burger</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                          <p class="card-text"><small class="text-muted">$9.99</small></p>
+                      </div>
+                      <div class="card-footer d-flex justify-content-between">
+                          <button class="btn btn-primary">Add to Cart</button>
+                          <button class="btn btn-success">Order Now</button>
+                      </div>
+                  </div>
+              </div>
+      </div>
+</div>
+</div>
+
+<div class="food-item  sandwich container">
+        <h1 class="text-center display-5 fw-normal pb-4">Sandwich</h1>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/sandwich/Veg Grilled Sandwich.png" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/sandwich/Veg Cheese Grilled Sandwich.png" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/sandwich/Veg Cheese Grill Sandwich.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/sandwich/paneer-sandwich.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/sandwich/grilled-cheese-sandwiches.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/sandwich/grilldsan.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/sandwich/Club-Sandwich-with-Super-Mayo.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/sandwich/cheese san.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+      </div>
+
+
+<div class="container food-item noodles">
+        <h1 class="text-center display-5 fw-normal pb-4">Noodles & Manchurian</h1>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/ndl & mnch/Chilli-Garlic.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles & Manchurian</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/ndl & mnch/regular.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles & Manchurian</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/ndl & mnch/schezwan noodle.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles & Manchurian</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/ndl & mnch/veg noodle.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles & Manchurian</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/ndl & mnch/manchurian-hakka-schezwan-noodles.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles & Manchurian</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/ndl & mnch/manchurian-gravy.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles & Manchurian</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="snacks/ndl & mnch/mnch.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Noodles & Manchurian</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                        <p class="card-text"><small class="text-muted">$12.99</small></p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        
+
+
+            <div class="food-item fries">
+                <h1 class="text-center display-6 fw-normal p-4 m-2">Fries & Pasta</h1>
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-3">
+                            <img src="snacks/fries & psta/basic fries.png" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetarian Pasta</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-3">
+                            <img src="snacks/fries & psta/cheese frie.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetarian Pasta</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-3">
+                            <img src="snacks/fries & psta/chili fries.png" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetarian Pasta</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-3">
+                            <img src="snacks/fries & psta/red chilli pasta.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetarian Pasta</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-3">
+                            <img src="snacks/fries & psta/whitesspasta.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetarian Pasta</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-3">
+                            <img src="snacks/fries & psta/specialpasta.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetarian Pasta</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-3">
+                            <img src="snacks/fries & psta/spicypasta.jpeg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetarian Pasta</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-3">
+                            <img src="snacks/fries & psta/whitesaspasta.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetarian Pasta</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+         </div>
+
+
+<div class="food-item coffee">
+    <h1 class="text-center display-6 fw-normal p-4 m-2">Coffee</h1>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/expresso.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/Hot-Chocolate.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">FLorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/milkshake-.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">Fresh pasta served with a variety of vegetables and a creamy sauce.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/cappuccino.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">Fresh pasta served with a variety of vegetables and a creamy sauce.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/coffee-milkshake.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">Fresh pasta served with a variety of vegetables and a creamy sauce.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/frappuccino.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">Fresh pasta served with a variety of vegetables and a creamy sauce.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/iced-mocha-coffee.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">Fresh pasta served with a variety of vegetables and a creamy sauce.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/samoa-cookie-cold.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">Fresh pasta served with a variety of vegetables and a creamy sauce.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <img src="snacks/Coffee/whipped-cream-chocolate-.jpg" alt="Vegetarian Pasta" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetarian Pasta</h5>
+                    <p class="card-text">Fresh pasta served with a variety of vegetables and a creamy sauce.</p>
+                    <p class="card-text"><small class="text-muted">$12.99</small></p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+       
+        </div>
+     </div>
+ </div>
+            
+    
+
+
+
+    <!--footer-->
+
+    <footer class="bg-black">
+        <div class="container">
+      
+            <div class="row p-1 my-2">
+              <div class="col-sm-3">
+                <h3>Useful link </h3>
+                <div class="footer_menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="form.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <h3>Food Items </h3>
+                <div class="footer_menu">
+                  <ul>
+                    <li><a href="product.html">Veg Food</a></li>
+                    <li><a href="Non-veg.html">Non-veg Food</a></li>
+                    <li><a href="Snack.html">Snacks and more</a></li>
+                  </ul>
+                </div>
+              </div>
+      
+              <div class="col-sm-3 ">
+                <h3>Social Media</h3>
+                <ul>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+              </div>
+             
+              <div class="col-sm-3">
+                <h3>Opening</h3>
+                  <p> <strong>Monday-Saturday</strong> <br>  09AM-11PM   
+                  <br><strong>Sunday</strong> <br> 10AM-02PM </p>
+              </div>
+            </div>
+      
+            <div class="row p-1">
+              <div class="col-12 p-1 my-2 col-lg-4">
+                <img src="icons/map-icon.png"> &nbsp; The Fire Fusiion Restaurant, <br>
+                   69 street near C21 Mall, <br>
+                    Ujjain, (M.P.)
+              </div> 
+      
+              <div class="col-12 p-1 my-2 col-lg-4">
+                <img src="icons/call-icon.png"> &nbsp; Call : +917000380337
+              </div>
+      
+              <div class="col-12 p-1 my-2 col-lg-4">
+                <img src="icons/mail-icon.png"> &nbsp;<a href="#">thefirefusiionrestaurant@gmail.com</a>
+              </div>
+            </div>
+    
+            <!--copyright-->
+      <div class="copyright">
+            <p>©2023 The Fire Fusiion Restaurant Food Services Pvt. Lmt. <br> 
+              All Rights Are Reserved <br>
+              Designed by~ The Fire Fusiion</p>
+            </div>
+      
+      
+          </div>
+        </footer>
+    
+
+
+  
+        <script>
+            $(document).ready(function(){
+              $('.owl-carousel').owlCarousel({
+                loop:false,
+                margin:10,
+                nav:false,
+                dots:true,
+                responsive:{
+                  0:{
+                    items:2
+                  },
+                  600:{
+                    items:3
+                  },
+                  1000:{
+                    items:4
+                  }
+                }
+              });
+        
+              $('.food-btn').click(function(){
+                var target = $(this).data('target');
+                $('.food-item').removeClass('active');
+                $('.food-item.' + target).addClass('active');
+              });
+            });
+          </script>
+</body>
+
+</html>

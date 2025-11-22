@@ -1,0 +1,753 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <title>About Us - The Fire Fusiion Restaurant</title>
+
+<style>
+
+body{
+  background-color: peachpuff;
+}
+
+/*navvvvv startttt*/
+.logo-image img:hover{
+  box-shadow: 0px 0px 10px red;
+  animation: imgRotate 0.5s ease;
+}
+@media only screen and (max-width: 768px) {
+  .logo-image img {
+    width: 65px;
+  }
+  .logo-image .name{
+    font-size:medium ;
+    }
+}
+@media only screen and (max-width: 480px) {
+  .logo-image img {
+    width: 45px;
+  }
+  .logo-image .name{
+  font-size: small ;
+  }
+}
+.nav-item a:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-decoration-thickness: 2px;
+}
+.nav-item a{
+ margin-inline: 10px;
+  font-size: larger;
+  color: white;
+}
+nav .btn {
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.name:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+}
+.extra p{
+font-size: small;
+}
+.extra .call, .address{
+position: fixed;
+bottom: 4em;
+}
+.extra .call, .address p{
+font-size: x-small;
+}
+/*nav endsss*/
+
+/*about*/
+.abouthead h3{
+  margin: 2em 0 20px 0;
+  color: black;
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.about1{
+  background-image: linear-gradient(rgba(255, 220, 185, .5), rgb(255, 218, 185, 0.5)), url('img/blur3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3em 0 4em 0;
+}
+.about-image{
+ margin-top: 2em;
+  padding:0 1em;
+  border-radius: 10%;
+  height: 90%;
+}
+.about1 p{
+  padding: 1em 1em 0 0;
+  color: black;
+  font-size: larger;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+
+/*services start*/
+.online {
+}
+.online .btn{
+  color: black;
+  background-color: rgba(255, 255, 0, 0.5);
+  font-weight: bold;
+  font-size: larger;
+  border: 1px solid black;
+  margin: 0 1.8em 1em 0;
+}
+
+.offline{
+  background-image: url('img/reserved2.0.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: auto;
+  width: auto;
+  border: 2px solid rgb(211, 23, 114);
+  border-radius: 1em 10em ;
+  margin-top: 1em;
+}
+.offline h1{
+  font-family: Lucida Sans Regular,cursive;
+  padding: 1em 0 0 0;
+  text-align: center;
+  align-items: center;
+}
+
+.offline p{
+  color:  rgba(0, 0, 0);
+  padding: 2em 0 7em 1em;
+  text-align: center;
+  font-size: larger;
+}
+/*services end*/
+
+.signdish p{
+  font-size: 16.5px;
+}
+.signdish img{
+  padding-bottom: 8px;
+  animation: imgRotate 60s linear infinite;
+}
+@keyframes imgRotate{ 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+}
+
+/*Chef*/
+.card{
+  box-shadow: 1px 1px 7px black;
+  text-align: center;
+  justify-content: center;
+  background: rgba(148, 147, 147, 0.5);
+}
+.card img{
+  padding: 10px 0;
+  width: 150px;
+margin: 0 auto;
+filter: drop-shadow(1px 2px 7px black);
+}
+.card-title{
+  color: green;
+}
+.card-text{
+
+}
+
+/*founder start*/
+.founder{
+  background-image: url('img/board3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  padding-bottom: 2em;
+}
+.founderhead{
+  padding: 2em 3em;
+}
+.founderhead h3{
+  text-align: center;
+color: whitesmoke;
+padding: 0 0 1em 0;
+font-family: Lucida Sans Regular,cursive;
+
+}
+.founderhead p{
+  text-align: center;
+  color: white;
+ font-size: larger;
+}
+#btn{
+  padding: 1em 1em 2em 0;
+}
+.founderbody{
+ /* background-image: url('img/rest8.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;*/
+  color: white;
+  margin: 2em 0;
+  padding: 3em 0 ;
+  width: 100%;
+ 
+}
+#fndr img{
+border-radius: 50%;
+}
+#fndr{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 250px 10px 15em 0;
+ /* background: linear-gradient(to right, #8E8D8D 0%,  #BEC0C2 100%);*/
+ background-color: rgb(129, 127, 127, 0.6);
+  height: 100%;
+margin-bottom: 5em ;
+}
+#fndr h5{
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 2px 2px 3px white;
+}
+#fndr p{
+  color: whitesmoke;
+  max-width: fit-content;
+  max-height: fit-content;
+  font-size:20px;
+}
+.media-body{
+  margin-bottom: 5em;
+    margin-right: 15px;
+}
+  .social-icons {
+    list-style: none;
+    padding: 0;
+}
+.social-icons li{
+    display: inline;
+   /* margin: 4px 10px;*/
+}
+.social-icons a {
+    color: #007bff;
+    font-size: 10px;
+
+}
+.social-icons li a:hover {
+  border: none;
+  filter: drop-shadow(0px 0px 5px gray);
+}
+
+@media only screen and (max-width:768px){
+  #fndr p{
+ font-size: small;
+ color: whitesmoke;
+  max-width: fit-content;
+  }
+}
+/*founder enddd*/
+
+
+
+/*testimonial startssss*/
+.test{
+  padding: 0 0 2em 0;
+  background-color: peachpuff;
+}
+.test h1{
+   text-align: center;
+   padding: 1em 0 0.5em 0;
+   font-family: Lucida Sans Regular,cursive;
+   font-weight: bolder;
+}
+.test .carousel-item{
+  background-color: pink;
+  padding: 3em 0 3em 0;
+  text-align: center;
+ 
+}
+.test .carousel-item h5{
+  color: black;
+font-family: 'Courier New', Courier, monospace;
+padding: 0 0 1em 0;
+font-size: 28px;
+font-weight: 900;
+}
+.test .carousel-item p{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0 7em 1em ;
+  font-size: large;
+}
+/*testimonial endssss*/
+
+
+
+
+
+/* footer start*/
+footer{
+padding: 1em 0;
+color: white;
+}
+footer h3{
+color: orange;
+font-family: cursive;
+}
+footer li, li a, a{
+  list-style:circle;
+  color: white;
+  text-decoration: none;
+}
+footer li a:hover{
+  color: orange;
+  text-decoration: none;
+}
+.copyright{
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  max-width:auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.navv{
+  height: 107px;
+}
+
+
+</style>
+</head>
+<body>
+
+ <!-- nav start -->
+   
+ <header class=" bg-dark navv fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top container">
+    <div class="container-fluid">
+<div class="logo-image">
+      <a class="navbar-brand" href="index.html"><img src="TFF.gif" alt="" width="80" class="rounded-circle">
+        <span class="name">The Fire Fusiion</span></a>
+</div>
+      <button class=" d-md-block d-lg-none navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <a class="navbar-brand" href="index.html">The Fire Fusiion</a></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Food Menu
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="product.html">Veg Food</a></li>
+                <li><a class="dropdown-item" href="Non-veg.html">Non-veg Food</a></li>
+                <li><a class="dropdown-item" href="Snack.html">Snacks and more</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning" type="submit">Search</button>
+          </form> 
+
+          <div class="extra d-lg-none mt-3 text-start container mt-5 extra">
+
+            <div class="row mt-2 hour">
+              <div class="col">
+                <h5>Opening Time</h5>
+                  <p>Monday-Saturday<br>  09AM-11PM </p>  
+                  <p>Sunday<br> 10AM-02PM</p> 
+              </div>
+              </div>
+          
+            <div class="row mt-2 address">
+              <div class="col col-1 mt-1">
+            <img src="icons/map-icon.png" alt="adds" class="" width="15px">
+          </div>
+            <p class="col col-10 mt-2">
+            69, Street near C21 mall,<br>
+            Ujjain, (M.P.), INDIA
+          </p>
+          </div>
+          <div class="row mt-1 call">
+            <div class="col col-1 ">
+            <img src="icons/call-icon.png" alt="call" width="18px">
+          </div>
+            <p class="col col-9 mt-1 ">0123456789</p>
+          </div>
+          
+           </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- nav end -->
+
+ 
+    <div class="abouthead container">
+    <h3>About us </h3>
+  </div>
+
+
+<!-- storyyyyyyyyyyyy -->
+<div class="about1 container">
+      <div class="row g-0 justify-content-center">
+      <div class="col col-10 col-lg-5">
+        <img src="img/rest..jpg" class="img-fluid about-image" alt="Restaurant Image">
+    </div>
+      <div class="card-body col col-10 col-lg-7">
+        <p class="card-text">
+          Welcome to The Fire Fusiion Restaurant, a culinary haven founded by a trio of passionate individuals who share a common
+          love for exceptional food and warm hospitality.
+        </p>
+        <p class="card-text">The story of The Fire Fusiion Restaurant is one of friendship, innovation, and a shared love for great food. Born out of the collective dream of three engineer friends Nagesh Rathore, Azam Khan and Bhagat Singh in this culinary venture is a testament to their shared passion and expertise.
+        </p>
+        <p class="card-text">
+          Beyond the delectable dishes, we take pride in providing a welcoming ambiance that invites you to relax and
+          enjoy the moment. From the cozy interior to the attentive service, every aspect of The Fire Fusiion Restaurant is
+          designed to make your dining experience exceptional.
+        </p>
+      </div>
+</div>
+</div>
+<!-- storyyyyyyyyyyy endssssss-->
+<hr>
+
+<!-- our servicesss........ -->
+<div class="service container">
+      <div class="container online justify-content-center"> 
+        <h1 class="text-center pt-3 display-4 fw-normal">Online Services</h1>
+            <div class="onbody row g-3  justify-content-center">
+                <div class="col col-md-5 col-lg-6  mt-5 col-10 pt-2">
+                    <h2 class="">Get the food item you want to your doorstep.<br><br> Whatever you want, wherever you want.</h2>
+                  </div>
+<div class="onlineimg col col-md-4 mt-4 col-8 col-lg-3">
+  <img src="img/Online-delivery-service-mobile-app-vector-illustration-PNG.png" alt="" width="100%" class="mt-2">
+</div>
+      </div>       
+             <div class="d-grid gap-1 d-md-flex justify-content-md-center">
+                      <button class="btn" type="submit">Order Online </button>
+                    </div>
+    </div>
+
+
+
+    <div class="container-fluid ">
+      <div class="row offline">
+        <h1 class="display-4 fw-normal">Offline Services</h1>
+          <div class="col-md-9">
+              <p>
+                Our offline services include personalized table reservations. Our attentive staff and inviting atmosphere set the stage for an unforgettable dining experience, also perfect for special occasions.<br> 
+                <strong> For booking a table, contact us: 0123456789</strong> 
+              </p>
+          </div>
+  </div>
+</div>
+
+</div>
+<!--  services endsss..........-->
+<hr>
+
+<!-- sign dish.............. -->
+<div class="container signdish text-black">
+  <div class="card-header text-center mt-2 p-3">
+    <h3 class="display-4 fw-normal">Our Signature Dish </h3>
+  </div>
+  <div class="row g-2 justify-content-center ">
+    <div class="signdish1 col col-lg-7 col-12">
+      <div class="card-body signbody text-center">
+  <p class="mt-5 p-2">
+At our restaurant, we invite you to embark on a culinary journey through the heart of India with our exquisite Signature Indian Thali.
+<br>
+Our Signature Indian Thali is a feast for the senses, showcasing the diversity of Indian flavors on a single platter. Delight in the comforting aroma of daal, the warmth of freshly baked roti, the sweetness of a delectable dessert, fragrant rice, and more. Each dish is a celebration of authenticity, prepared with precision and love by our skilled chefs.
+</p>
+      </div>
+</div>
+<div class="col col-lg-4">
+  <img src="veg/indian-veg-thali-food-platter-selective-focus_466689-35567.png" width="100%">
+</div>
+</div>
+</div>
+
+<!-- sign dish ends.............. -->
+<hr>
+
+
+<div class="container chefs ">
+  <div class="card-header text-center mt-2 p-3">
+    <h3 class="display-4 fw-normal">Our Chefs </h3>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-lg-4 ">
+        <div class="card mb-3">
+            <img src="img/chef1.png" alt="chef1" class="card-img-top img-fluid">
+            <div class="card-body">
+                <h4 class="card-title">Chef 1</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quo.</p>
+              
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card mb-3">
+          <img src="img/chef2.png" alt="chef2" class="card-img-top img-fluid">
+            <div class="card-body">
+                <h4 class="card-title">Chef 2 </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        <div class="card mb-3">
+          <img src="img/chef3.png" alt="chef3" class="card-img-top img-fluid">
+            <div class="card-body">
+                <h4 class="card-title">Chef 3 </h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quo.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<hr>
+<!-- founderssss  -->
+<div class="founder container">
+  <div class="founderhead">
+    <h3 class="display-4 fw-normal">The Founders </h3>
+        <p>
+          Three friends with a shared passion for great food and a foundation in engineering have joined forces to
+          embark on a flavorful journey, channeling their technical expertise into the creation of The Fire Fusiion Restaurant –
+          a restaurant where innovation meets culinary excellence. 
+        </p>
+      </div>
+       
+        <div class="container-fluid mt-3">
+
+          <div class="btn d-grid gap-1 d-md-flex justify-content-md-end" id="btn">
+          <button class="btn btn-info active" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Learn more.....
+          </button>
+        </div>
+
+          <div class="collapse" id="collapseExample">
+            <div class="founderbody">
+        <!-- Founder 1 -->
+        <div class="media mt-3 " id="fndr">
+          <img src="prsn1.jpg" class="mr-3" alt="Founder 1" width="180px">
+          <div class="media-body">
+            <h5 class="mt-3">NAGESH RATHORE</h5>
+            <p>NAGESH RATHORE is the creative force behind our unique menu. With a passion for innovative culinary concepts, Nagesh
+              strives to bring a modern twist to traditional dishes, offering our guests a dining experience that is
+              both familiar and exciting.</p>
+              <ul class="social-icons">
+                <li><a href="#" target="_blank"><img src="icons/insta2.png" alt="Instagram" width="30px"></a>
+                </li>
+                <li><a href="#" target="_blank"><img src="icons/fb.png" alt="Facebook" width="25px"></a></li>
+                <li><a href="#" target="_blank"><img src="icons/twtr.png" alt="Twitter" width="30px"></a></li>
+                <li><a href="#" target="_blank"><img src="icons/email.png" alt="Email" width="30px"></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Founder 2 -->
+        <div class="media mt-3 " id="fndr">
+          <img src="prsn2.jpg" class="mr-3" alt="Founder 2" width="180px">
+          <div class="media-body">
+            <h5 class="mt-3">AZAM KHAN</h5>
+            <p>AZAM KHAN brings a wealth of expertise in restaurant management and customer service. With a background in
+              hospitality, he is dedicated to ensuring that every guest at The Fire Fusiion Restaurant experiences unparalleled
+              service and a welcoming atmosphere.</p>
+              <ul class="social-icons">
+                <li><a href="#" target="_blank"><img src="icons/insta2.png" alt="Instagram" width="30px"></a>
+                </li>
+                <li><a href="#" target="_blank"><img src="icons/fb.png" alt="Facebook" width="25px"></a></li>
+                <li><a href="#" target="_blank"><img src="icons/twtr.png" alt="Twitter" width="30px"></a></li>
+                <li><a href="#" target="_blank"><img src="icons/email.png" alt="Email" width="30px"></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Founder 3 -->
+        <div class="media mt-3" id="fndr">
+          <img src="prsn3.jpg" class="mr-3" alt="Founder 3" width="180px">
+          <div class="media-body">
+            <h5 class="mt-3">BHAGAT SINGH PANWAR</h5>
+            <p>BHAGAT SINGH PANWAR has a warm background in engineering, he brings a unique perspective to The Fire Fusiion Restaurant, transforming technical expertise into culinary innovation.</p>
+              <ul class="social-icons">
+                <li><a href="#" target="_blank"><img src="icons/insta2.png" alt="Instagram" width="30px"></a>
+                </li>
+                <li><a href="#" target="_blank"><img src="icons/fb.png" alt="Facebook" width="25px"></a></li>
+                <li><a href="#" target="_blank"><img src="icons/twtr.png" alt="Twitter" width="30px"></a></li>
+                <li><a href="#" target="_blank"><img src="icons/email.png" alt="Email" width="30px"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Founders -->
+  <hr>
+
+<!-- Testimonials................ -->
+<div class="test container">
+  <h1 class="display-4 fw-normal"> Testimonial </h1>
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel">
+          <h5>Samantha R. - ★★★★★ </h5>
+          <p>  "Indulging in the delightful flavors of Indian snacks at The Fire Fusiion Restaurant is my idea of pure happiness! From crispy samosas to flavorful chaat, each bite is a burst of joy. Thank you for bringing the essence of Indian street food to my table!"</p>
+        </div>
+      </div>
+  
+      <div class="carousel-item ">
+        <div class="carousel">
+          <h5>Sam C. - ★★★★★</h5>
+          <p>"Nothing beats the comfort of a warm plate of buttery naan and rich curry from The Fire Fusiion Restaurant. The authentic taste takes me back to family dinners and celebrations. A culinary gem for anyone who loves the heartiness of Indian cuisine!"</p>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <div class="carousel">
+          <h5>Ananya D. - ★★★★</h5>
+          <p> "Kudos to The Fire Fusiion Restaurant for nailing the art of Indian snacking. The pani puri is an explosion of flavors, and the aloo tikki is a perfect blend of spice and comfort. A taste journey that keeps me coming back for more!"</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  </div>
+<!-- testimonials endsssss -->
+
+
+
+    <!--footer-->
+
+  <footer class="bg-black">
+    <div class="container">
+  
+        <div class="row p-1 my-2">
+          <div class="col-sm-3">
+            <h3>Useful link </h3>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+               
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <h3>Food Items </h3>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="product.html">Veg Food</a></li>
+                <li><a href="Non-veg.html">Non-veg Food</a></li>
+                <li><a href="Snack.html">Snacks and more</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-sm-3 ">
+            <h3>Social Media</h3>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+         
+          <div class="col-sm-3">
+            <h3>Opening</h3>
+              <p> <strong>Monday-Saturday</strong> <br>  09AM-11PM   
+              <br><strong>Sunday</strong> <br> 10AM-02PM </p>
+          </div>
+        </div>
+  
+        <div class="row p-1">
+          <div class="col-12 p-1 my-2 col-lg-4">
+            <img src="icons/map-icon.png"> &nbsp; The Fire Fusiion Restaurant, <br>
+               69 street near C21 Mall, <br>
+                Ujjain, (M.P.)
+          </div> 
+  
+          <div class="col-12 p-1 my-2 col-lg-4">
+            <img src="icons/call-icon.png"> &nbsp; Call : +917000380337
+          </div>
+  
+          <div class="col-12 p-1 my-2 col-lg-4">
+            <img src="icons/mail-icon.png"> &nbsp;<a href="#">thefirefusiionrestaurant@gmail.com</a>
+          </div>
+        </div>
+
+        <!--copyright-->
+  <div class="copyright">
+        <p>©2023 The Fire Fusiion Restaurant Food Services Pvt. Lmt. <br> 
+          All Rights Are Reserved <br>
+          Designed by~ The Fire Fusiion</p>
+        </div>
+  
+  
+      </div>
+    </footer>
+
+</body>
+</html>
